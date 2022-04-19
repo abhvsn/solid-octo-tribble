@@ -1,0 +1,192 @@
+{
+  "unpublishedPage": {
+    "name": "Stats for Applied role",
+    "slug": "stats-for-applied-role",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 730,
+          "containerStyle": "none",
+          "snapRows": 70,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 710,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "appliedrole",
+                "cnt"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 19,
+              "bottomRow": 47,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.appliedrole.computedValue"
+                },
+                {
+                  "key": "primaryColumns.cnt.computedValue"
+                }
+              ],
+              "leftColumn": 1,
+              "primaryColumns": {
+                "appliedrole": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "appliedrole",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "appliedrole",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.appliedrole))}}"
+                },
+                "cnt": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "cnt",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "cnt",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.cnt))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "csxs84vihh",
+              "derivedColumns": {},
+              "rightColumn": 35,
+              "textSize": "PARAGRAPH",
+              "widgetId": "5jsdzhp0rp",
+              "isVisibleFilters": true,
+              "tableData": "{{JSObject1.function()}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Select2",
+              "isFilterable": false,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba.svg",
+              "labelText": "Label",
+              "topRow": 13,
+              "bottomRow": 17,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "DROP_DOWN_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": true,
+              "defaultOptionValue": "{{\n            {\n              label: Select2.options[0].label,\n              value: Select2.options[0].value\n            }\n          }}",
+              "selectionType": "SINGLE_SELECT",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "options"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "leftColumn": 2,
+              "labelPosition": "Left",
+              "options": "{{Get_data.data.map( (obj) =>{ return  {'label': obj.applied_role, 'value': obj.applied_role } })}}",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "64wfgs48hy",
+              "isRequired": false,
+              "rightColumn": 22,
+              "widgetId": "y5d606x7r8",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Stats for Applied role_Get_data",
+              "name": "Get_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Stats for Applied role",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6259a0d177342c7fd9132cf2_6259a92377342c7fd9132d3a"
+}

@@ -1,0 +1,504 @@
+{
+  "unpublishedPage": {
+    "name": "Track_Applicant",
+    "slug": "track-applicant",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1220,
+          "containerStyle": "none",
+          "snapRows": 70,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 710,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Application_tracker",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "candidate_name",
+                "candidate_email",
+                "candidate_phone_no",
+                "applied_role",
+                "application_datetime",
+                "application_status"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 1,
+              "bottomRow": 34,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.candidate_name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.candidate_email.computedValue"
+                },
+                {
+                  "key": "primaryColumns.candidate_phone_no.computedValue"
+                },
+                {
+                  "key": "primaryColumns.applied_role.computedValue"
+                },
+                {
+                  "key": "primaryColumns.application_datetime.computedValue"
+                },
+                {
+                  "key": "primaryColumns.application_status.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "candidate_name": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "candidate_name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "candidate_name",
+                  "computedValue": "{{Application_tracker.sanitizedTableData.map((currentRow) => ( currentRow.candidate_name))}}"
+                },
+                "candidate_email": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "candidate_email",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "candidate_email",
+                  "computedValue": "{{Application_tracker.sanitizedTableData.map((currentRow) => ( currentRow.candidate_email))}}"
+                },
+                "candidate_phone_no": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "candidate_phone_no",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "candidate_phone_no",
+                  "computedValue": "{{Application_tracker.sanitizedTableData.map((currentRow) => ( currentRow.candidate_phone_no))}}"
+                },
+                "applied_role": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "applied_role",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "applied_role",
+                  "computedValue": "{{Application_tracker.sanitizedTableData.map((currentRow) => ( currentRow.applied_role))}}"
+                },
+                "application_datetime": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "application_datetime",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "application_datetime",
+                  "computedValue": "{{Application_tracker.sanitizedTableData.map((currentRow) => ( currentRow.application_datetime))}}"
+                },
+                "application_status": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "application_status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "application_status",
+                  "computedValue": "{{Application_tracker.sanitizedTableData.map((currentRow) => ( currentRow.application_status))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "hkyr4hntcz",
+              "derivedColumns": {},
+              "rightColumn": 57,
+              "textSize": "PARAGRAPH",
+              "widgetId": "wd280by07e",
+              "isVisibleFilters": true,
+              "tableData": "{{Get_data.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "schema": {
+                "__root_schema__": {
+                  "children": {
+                    "candidate_name": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.candidate_name))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "Test",
+                      "isCustomField": false,
+                      "accessor": "candidate_name",
+                      "identifier": "candidate_name",
+                      "position": 0,
+                      "originalIdentifier": "candidate_name",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Candidate Name"
+                    },
+                    "candidate_email": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.candidate_email))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                      "fieldType": "Email Input",
+                      "sourceData": "test@gmail.com",
+                      "isCustomField": false,
+                      "accessor": "candidate_email",
+                      "identifier": "candidate_email",
+                      "position": 1,
+                      "originalIdentifier": "candidate_email",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Candidate Email"
+                    },
+                    "candidate_phone_no": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.candidate_phone_no))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 1234567876,
+                      "isCustomField": false,
+                      "accessor": "candidate_phone_no",
+                      "identifier": "candidate_phone_no",
+                      "position": 2,
+                      "originalIdentifier": "candidate_phone_no",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Candidate Phone No"
+                    },
+                    "applied_role": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.applied_role))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "Accepted",
+                      "isCustomField": false,
+                      "accessor": "applied_role",
+                      "identifier": "applied_role",
+                      "position": 3,
+                      "originalIdentifier": "applied_role",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Applied Role"
+                    },
+                    "application_datetime": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.application_datetime))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "2022-04-15T17:02:27Z",
+                      "isCustomField": false,
+                      "accessor": "application_datetime",
+                      "identifier": "application_datetime",
+                      "position": 4,
+                      "originalIdentifier": "application_datetime",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Application Datetime"
+                    },
+                    "application_status": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.application_status))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "done",
+                      "isCustomField": false,
+                      "accessor": "application_status",
+                      "identifier": "application_status",
+                      "position": 5,
+                      "originalIdentifier": "application_status",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Application Status"
+                    }
+                  },
+                  "dataType": "object",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(Edit_application.sourceData, Edit_application.formData, Edit_application.fieldState)}}",
+                  "fieldType": "Object",
+                  "sourceData": {
+                    "candidate_name": "Test",
+                    "candidate_email": "test@gmail.com",
+                    "candidate_phone_no": 1234567876,
+                    "applied_role": "Accepted",
+                    "application_datetime": "2022-04-15T17:02:27Z",
+                    "application_status": "done"
+                  },
+                  "isCustomField": false,
+                  "accessor": "__root_schema__",
+                  "identifier": "__root_schema__",
+                  "position": -1,
+                  "originalIdentifier": "__root_schema__",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "label": ""
+                }
+              },
+              "widgetName": "Edit_application",
+              "submitButtonStyles": {
+                "buttonColor": "#03B365",
+                "buttonVariant": "PRIMARY"
+              },
+              "dynamicPropertyPathList": [
+                {
+                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                }
+              ],
+              "displayName": "JSON Form",
+              "iconSVG": "/static/media/icon.5b428de1.svg",
+              "topRow": 37,
+              "bottomRow": 87,
+              "fieldLimitExceeded": false,
+              "parentRowSpace": 10,
+              "title": "Form",
+              "type": "JSON_FORM_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "schema.__root_schema__.defaultValue"
+                },
+                {
+                  "key": "sourceData"
+                },
+                {
+                  "key": "schema.__root_schema__.children.candidate_name.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.candidate_email.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.candidate_phone_no.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.applied_role.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.application_datetime.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.application_status.defaultValue"
+                }
+              ],
+              "sourceData": "{{Application_tracker.selectedRow}}",
+              "showReset": true,
+              "resetButtonLabel": "Reset",
+              "key": "iva6yd0cni",
+              "backgroundColor": "#fff",
+              "rightColumn": 53,
+              "autoGenerateForm": true,
+              "widgetId": "lh1fi2834r",
+              "resetButtonStyles": {
+                "buttonColor": "#03B365",
+                "buttonVariant": "SECONDARY"
+              },
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "scrollContents": true,
+              "fixedFooter": true,
+              "submitButtonLabel": "Submit",
+              "disabledWhenInvalid": true
+            },
+            {
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 88,
+              "bottomRow": 120,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "72458lo08k": {
+                  "seriesName": "Sales",
+                  "data": "{{Get_data.data.map( (obj) =>{ return  {'x': obj.applied_role, 'y': obj.} })}}"
+                }
+              },
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.72458lo08k.data"
+                }
+              ],
+              "leftColumn": 0,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "c1ub6newka",
+              "rightColumn": 24,
+              "widgetId": "g06b6onxhf",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "xAxisName": "Product Line",
+              "chartType": "COLUMN_CHART"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Track_Applicant_Get_data",
+              "name": "Get_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Track_Applicant",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6259a0d177342c7fd9132cf2_6259a56077342c7fd9132d20"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Stats for Applied role",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default\n{\n\tfunction(){\n    const data = Get_data.data.map(obj => ({\n        appliedrole: obj.applied_role,\n        cnt : obj.count\n        }));\n     return data;\n    }\n}\n",
+    "variables": []
+  },
+  "id": "Stats for Applied role_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6259a0d177342c7fd9132cf2_6259ab0377342c7fd9132d47"
+}

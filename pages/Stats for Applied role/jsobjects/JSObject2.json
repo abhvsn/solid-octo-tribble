@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Stats for Applied role",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default\n{\n\n  function() {\n      if (Select1.selectedOptionValue === \"1\") {\n        return \"Option 1\";\n      } else {\n        return \"Option 2\";\n      }\n   })\n\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Stats for Applied role_JSObject2",
+  "deleted": false,
+  "gitSyncId": "6259a0d177342c7fd9132cf2_6259b9df77342c7fd9132de6"
+}
